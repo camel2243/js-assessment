@@ -8,8 +8,9 @@
 
 再來，複製或下載此Git Repo，並於該資料夾執行下列指令：
 
+
     npm install
-    node bin/serve
+    npm start
 
 正常啓動後，連至
 [http://localhost:4444](http://localhost:4444)會看到測試結果頁面。
@@ -20,9 +21,8 @@
 
     npm test
 
-
-
 ## 看不懂要如何修改？
+
 
 開啟`tests/app/`中的檔案為測試檔，每一個`it('中文敘述', function() { //測試區塊})`都是一個測試。`beforeEach`是每個測試的前置作業，範例：`array.js`中的beforeEach設定了`a=[1,2,3,4];`，也就是所有測試都可以取得一個名為`a`的陣列（當然，他們是互相獨立的）。`answers`對應的就是`app/`裡相同檔名的模組，範例：`answers.indexOf()`對應的就是`indexOf:`的程式區段。而您的目標是完成每個測試區塊中的expect條件，多數expect呼叫方式很直觀，如有不懂可至[expect.js](https://github.com/LearnBoost/expect.js/blob/master/README.md)找尋更多使用範例。
 
@@ -36,12 +36,6 @@ This work is licensed under the [Creative Commons Attribution-Share Alike 3.0](h
 license. You are free to share and remix the work, and to use it for commercial
 purposes under the following conditions:
 
-- *Attribution* — You must attribute the work in the manner specified by the
-  author or licensor (but not in any way that suggests that they endorse you or
-  your use of the work).
-- *Share Alike* — If you alter, transform, or build upon this work, you may
-  distribute the resulting work only under the same or similar license to this
-  one.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 
-Any of these conditions can be waived if you get permission from the copyright
-holder.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

@@ -1,53 +1,59 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module); }
+exports = typeof window === 'undefined' ? global : window;
 
-define(function() {
-  return {
-    indexOf : function(arr, item) {
+exports.arraysAnswers = {
+  indexOf: function(arr, item) {
 
-    },
+  },
 
-    sum : function(arr) {
+  sum: function(arr) {
 
-    },
+  },
 
-    remove : function(arr, item) {
+  remove: function(arr, item) {
 
-    },
-    
-    removeWithoutCopy : function(arr, item) {
+  },
 
-    },
+  removeWithoutCopy: function(arr, item) {
 
-    append : function(arr, item) {
+  },
 
-    },
+  append: function(arr, item) {
 
-    truncate : function(arr) {
+  },
 
-    },
+  truncate: function(arr) {
 
-    concat : function(arr1, arr2) {
+  },
 
-    },
+  prepend: function(arr, item) {
 
-    insert : function(arr, item, index) {
+  },
 
-    },
+  curtail: function(arr) {
 
-    count : function(arr, item) {
+  },
 
-    },
+  concat: function(arr1, arr2) {
 
-    duplicates : function(arr) {
+  },
 
-    },
+  insert: function(arr, item, index) {
 
-    square : function(arr) {
+  },
 
-    },
+  count: function(arr, item) {
 
-    findAllOccurrences : function(arr, target) {
+  },
 
-    }
-  };
-});
+  duplicates: function(arr) {
+
+  },
+
+  square: function(arr) {
+
+  },
+
+  findAllOccurrences: function(arr, target) {
+
+  }
+};
